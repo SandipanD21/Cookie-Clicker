@@ -8,8 +8,9 @@ import time
 URL = "http://orteil.dashnet.org/experiments/cookie/"
 TIME_RUN = 1
 WAITTIME = 10
+CHROMEDRIVER_PATH = "C:\Development\chromedriver.exe"
 
-service = Service("C:\Development\chromedriver.exe")
+service = Service(CHROMEDRIVER_PATH)
 driver = webdriver.Chrome(service=service)
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
